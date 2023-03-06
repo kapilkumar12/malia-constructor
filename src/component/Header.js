@@ -13,7 +13,7 @@ const Header = () => {
               <span>
                 <LocalPhoneIcon />
               </span>
-              Call Us:- <a href="tel:9811065679"> +91 9811065679</a>
+              Call Us:- <a href="tel:9811065679"> +919811065679</a>
             </li>
             <li>
               <span>
@@ -31,7 +31,13 @@ const Header = () => {
       {/* <!-- Navbar Start --> */}
       <nav className="navbar navbar-expand-lg  navbar-light sticky-top py-0 pe-5">
         <a href="index.html" className="navbar-brand ps-5 me-0">
-          <h1 className="text-white m-0">Industro</h1>
+          <h1 className="text-white m-0">
+            <img
+              src="images/logo.png"
+              alt="Malia Contructor"
+              className="logo"
+            />
+          </h1>
         </a>
         <button
           type="button"

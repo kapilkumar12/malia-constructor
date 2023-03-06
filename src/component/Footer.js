@@ -35,8 +35,12 @@ const Footer = () => {
                       <PlaceIcon />
                     </span>
                     <p>
-                      B-Block Flat No 201 Samdariya Complex New
-                      <br /> Bus Stand Ward No 15 Madhya Pradesh.
+                      <a href="https://g.co/kgs/NQggwA">
+                        <span>
+                          235, Street Number 6, Palam Colony, Sadh Nagar, Palam,
+                          New Delhi, Delhi 110045
+                        </span>
+                      </a>
                     </p>
                   </li>
                 </ul>
@@ -79,6 +83,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="footer-end">
+        Copyright © 2023 Malia Contructor All right reserved.
       </div>
     </>
   );

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import "./style.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Whatsapp from "./Whatsapp";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Header />
@@ -47,7 +53,7 @@ const Home = () => {
           </div>
           <div className="carousel-item">
             <img
-              src="images/construction.png"
+              src="images/construction.jpg"
               className="d-block w-100"
               alt="..."
             />
@@ -95,10 +101,8 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-
       {/* about us */}
-
-      <div className="container-fluid bg-dark">
+      <div className="container-fluid bg-dark" data-aos="fade-right">
         <div className="container">
           <div className="about-hea">
             <h1>About Us</h1>
@@ -146,9 +150,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/* work procedure section */}
-      <div className="container-fluid procedure bg-dark ">
+      {/* data-aos="fade-left" */}
+      <div className="container-fluid procedure bg-dark " data-aos="fade-right">
         <div className="container pb-5">
           <div>
             <h1>OUR WORK PROCEDURE</h1>
@@ -272,6 +276,86 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* our services section start */}
+      <div className="container-fluid">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6"></div>
+            <div className="col-lg-6"></div>
+          </div>
+          <div className="row">
+            <div className="col-lg-6"></div>
+            <div className="col-lg-6"></div>
+          </div>
+        </div>
+      </div>
+      {/* our services section end */}
+      {/* project gallery section start */}
+      <div className="container pb-5" data-aos="zoom-in">
+        <div className="about-hea text-dark">
+          <h1>Our Project Gallery</h1>
+          <div className="procedure-line"></div>
+        </div>
+
+        <div className="row ">
+          <div className="col-md-4">
+            <img
+              src="images/IMG-20230211-WA0045.jpg"
+              className="project"
+              alt=""
+            />
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src="images/IMG-20230211-WA0059.jpg"
+              className="project"
+              alt=""
+            />
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src="images/IMG-20230211-WA0079.jpg"
+              className="project"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-4">
+            <img
+              src="images/IMG-20230211-WA0082.jpg"
+              className="project"
+              alt=""
+            />
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src="images/IMG-20230211-WA0099.jpg"
+              className="project"
+              alt=""
+            />
+          </div>
+
+          <div className="col-md-4">
+            <img
+              src="images/IMG-20230211-WA0100.jpg"
+              className="project"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="text-center pt-5">
+          <button type="button" class="btn btn-danger">
+            See more...
+          </button>
+        </div>
+      </div>
+      {/* project gallery section end */}
+      <Whatsapp />
       <Footer />
     </>
   );
