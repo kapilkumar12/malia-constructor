@@ -5,6 +5,7 @@ import "./style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Whatsapp from "./Whatsapp";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -143,7 +144,7 @@ const Home = () => {
                   all kind of constuction work like structure,erecting, <br />
                   flooring and also in garden and parks. we are specialist
                   <br /> in greet wash and having ecperience over 25+ years
-                  <br /> in this feild. <a href="">Read more...</a>
+                  <br /> in this feild. <Link to="/about_us">Read more...</Link>
                 </p>
               </div>
             </div>
@@ -347,9 +348,8 @@ const Home = () => {
             />
           </div>
         </div>
-
         <div className="text-center pt-5">
-          <button type="button" class="btn btn-danger">
+          <button type="button" className="btn btn-danger">
             See more...
           </button>
         </div>

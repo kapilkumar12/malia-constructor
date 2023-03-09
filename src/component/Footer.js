@@ -2,6 +2,7 @@ import React from "react";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import PlaceIcon from "@mui/icons-material/Place";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,30 +18,30 @@ const Footer = () => {
                     <span>
                       <LocalPhoneIcon />
                     </span>
-                    <a href="tel:9811065679"> +91 9811065679</a>
+                    <a to="tel:9811065679"> +91 9811065679</a>
                   </li>
                   <li className="mx">
-                    <a href="tel:8076191216"> +91 8076191216</a>
+                    <a to="tel:8076191216"> +91 8076191216</a>
                   </li>
                   <li className="">
                     <span>
                       <EmailIcon />
                     </span>
-                    <a href="mailto:maliacontractorcivil@gmail.com">
+                    <Link to="mailto:maliacontractorcivil@gmail.com">
                       maliacontractorcivil@gmail.com
-                    </a>
+                    </Link>
                   </li>
                   <li className="d-flex">
                     <span className="pt-2">
                       <PlaceIcon />
                     </span>
                     <p>
-                      <a href="https://g.co/kgs/NQggwA">
+                      <Link to="https://g.co/kgs/NQggwA">
                         <span>
                           235, Street Number 6, Palam Colony, Sadh Nagar, Palam,
                           New Delhi, Delhi 110045
                         </span>
-                      </a>
+                      </Link>
                     </p>
                   </li>
                 </ul>
@@ -52,19 +53,19 @@ const Footer = () => {
               <div>
                 <ul>
                   <li>
-                    <a href="">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a href="">About</a>
+                    <Link to="/about_us">About</Link>
                   </li>
                   <li>
-                    <a href="">Services</a>
+                    <Link to="/services">Services</Link>
                   </li>
                   <li>
-                    <a href="">Our Project Gallery</a>
+                    <Link to="/gallery">Our Project Gallery</Link>
                   </li>
                   <li>
-                    <a href="">Contact Us</a>
+                    <Link to="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -85,7 +86,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-end">
-        Copyright © 2023 Malia Contructor All right reserved.
+        Copyright © 2023 Malia Contractor All right reserved.
       </div>
     </>
   );

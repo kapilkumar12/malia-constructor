@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,16 +14,16 @@ const Header = () => {
               <span>
                 <LocalPhoneIcon />
               </span>
-              Call Us:- <a href="tel:9811065679"> +919811065679</a>
+              Call Us:- <Link to="tel:9811065679"> +919811065679</Link>
             </li>
             <li>
               <span>
                 <EmailIcon />
               </span>
               Email:-
-              <a href="mailto:maliacontractorcivil@gmail.com">
+              <Link to="mailto:maliacontractorcivil@gmail.com">
                 maliacontractorcivil@gmail.com
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -49,22 +50,22 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.html" className="nav-item nav-link ">
+            <Link to="/" className="nav-item nav-link ">
               Home
-            </a>
-            <a href="about.html" className="nav-item nav-link">
+            </Link>
+            <Link to="/about_us" className="nav-item nav-link">
               About
-            </a>
-            <a href="service.html" className="nav-item nav-link">
+            </Link>
+            <Link to="/service" className="nav-item nav-link">
               Services
-            </a>
+            </Link>
 
-            <a href="service.html" className="nav-item nav-link">
+            <Link to="/gallery" className="nav-item nav-link">
               Our Project Gallery
-            </a>
-            <a href="contact.html" className="nav-item nav-link">
+            </Link>
+            <Link to="/contact" className="nav-item nav-link">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

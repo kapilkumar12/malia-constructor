@@ -17,7 +17,7 @@
   color: rgb(187, 86, 86);
 }
 
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .header-first {
     display: none;
   }
@@ -136,7 +136,7 @@
   margin-left: 40%;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .about-line {
     margin: auto;
   }
@@ -158,7 +158,7 @@
   padding-top: 15px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .procedure h1 {
     font-size: 1em;
   }
@@ -169,7 +169,7 @@
   width: 40%;
   margin-left: 30%;
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .procedure-line {
     margin: auto;
   }
@@ -353,7 +353,7 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .procedure-box-section1 .col:nth-of-type(1),
   .procedure-box-section1 .col:nth-of-type(2),
   .procedure-box-section1 .col:nth-of-type(3),
@@ -363,7 +363,7 @@
     overflow: hidden;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .procedure-box-section2 .col:nth-of-type(1),
   .procedure-box-section2 .col:nth-of-type(2),
   .procedure-box-section2 .col:nth-of-type(3) {
@@ -446,49 +446,49 @@
 .work-hours ul {
   list-style: none;
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .work-hours h3 {
     margin-left: 25px;
     font-size: 1em;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .work-hours h3 {
     margin-left: 25px;
     font-size: 1em;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .work-hours h3 {
     margin-left: 25px;
     font-size: 1em;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .work-hours h3 {
     margin-left: 25px;
     font-size: 1em;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .links h3 {
     margin-left: 30px;
     font-size: 1em;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .footer .office1 h3 {
     margin-left: 18px;
     font-size: 1em;
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .footer {
     padding-left: 0px;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
+@media screen and (min-width: 0px) and (max-width: 1280px) {
   .footer .col:nth-of-type(1) {
     width: 100%;
     /* margin-left: 0px; */
@@ -504,3 +504,147 @@
   text-align: center;
   padding: 10px;
 }
+
+/* about page section start */
+.about-banner {
+  max-width: 100%;
+  /* width: 600px; */
+  height: 90vh;
+  position: relative;
+}
+
+.about-banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.about-banner-text {
+  position: absolute;
+  margin-left: -300px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.about-banner-img {
+  z-index: 1;
+} /* behind */
+.about-banner-text {
+  z-index: 2;
+}
+.about-banner-img {
+  background: url(/public/images/Maintaining-Goodwill-for-Construction-Companies.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(2px);
+}
+
+.about-banner-text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 2px 2px #545454;
+}
+.about-img img {
+  max-width: 100%;
+  width: 500px;
+  height: 300px;
+}
+.about-red {
+  background-color: #ff0000;
+  padding: 1px;
+  width: 20%;
+  /* margin-left: 40%; */
+}
+.h1 {
+  font-family: "Audiowide", sans-serif;
+}
+.about-content {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+@media screen and (min-width: 0px) and (max-width: 1280px) {
+  .about-banner-text {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1280px) {
+  video {
+    width: 400px;
+    padding: 30px;
+  }
+}
+/* about page section end */
+
+.contact-red {
+  background-color: #ff0000;
+  padding: 1px;
+  width: 20%;
+}
+.contact-banner {
+  max-width: 100%;
+  /* width: 600px; */
+  height: 90vh;
+  position: relative;
+}
+
+.contact-banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-banner-text {
+  position: absolute;
+  margin-left: -300px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-banner-img {
+  z-index: 1;
+} /* behind */
+.contact-banner-text {
+  z-index: 2;
+}
+.contact-banner-img {
+  background: url(/public/images/construction-1400px.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.contact-banner-text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 2px 2px #545454;
+}
+.contact-btn {
+  margin-top: 40px;
+  margin-left: -300px;
+}
+.contact-img img {
+  max-width: 100%;
+  margin: 40px;
+  width: 600px;
+}
+.map iframe {
+  width: 1300px;
+  height: 450px;
+  padding-top: 10px;
+}
+/* contact page section end */
