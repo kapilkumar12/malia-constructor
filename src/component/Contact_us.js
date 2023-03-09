@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Whatsapp from "./Whatsapp";
 
 const Contact_us = () => {
   return (
@@ -26,7 +27,7 @@ const Contact_us = () => {
 
       <div className="container contact-section bg-light p-5" id="contact">
         <div className="row">
-          <div className="col lg">
+          <div className="col-lg">
             <div className="row justify-content-center">
               <div className="col-lg-12 pt-5">
                 <div>
@@ -101,7 +102,7 @@ const Contact_us = () => {
             </div>
           </div>
 
-          <div className="col lg">
+          <div className="col-lg">
             <div className="contact-img">
               <img src="images/contact-vector.png" alt="" />
             </div>
@@ -117,7 +118,7 @@ const Contact_us = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
+      <Whatsapp />
       <Footer />
     </>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Whatsapp from "./Whatsapp";
 
 const About_us = () => {
   return (
@@ -22,23 +23,23 @@ const About_us = () => {
       </div>
       <div className="container pt-5">
         <div className="row">
-          <div className="col lg">
+          <div className="col-lg">
             <div className="row about-img">
-              <div className="col lg">
+              <div className="col-lg">
                 <div>
                   <img src="images/IMG-20230211-WA0068.jpg" alt="" />
                 </div>
               </div>
-              <div className="col lg">
+              <div className="col-lg">
                 <div>
                   <img src="images/IMG-20230211-WA0063.jpg" alt="" />
                 </div>
               </div>
             </div>
             <div className="row">
-              <div className="col lg">
+              <div className="col-lg">
                 <div>
-                  <video width="300" height="240" controls>
+                  <video controls className="video-div">
                     <source
                       src="images/WhatsApp Video 2023-02-11 at 18.20.19.mp4"
                       type="video/mp4"
@@ -47,9 +48,9 @@ const About_us = () => {
                   </video>
                 </div>
               </div>
-              <div className="col lg">
+              <div className="col-lg">
                 <div>
-                  <video width="300" height="240" controls>
+                  <video className="video-div" controls>
                     <source
                       src="images/VID-20230211-WA0004.mp4"
                       type="video/mp4"
@@ -60,7 +61,7 @@ const About_us = () => {
               </div>
             </div>
           </div>
-          <div className="col lg">
+          <div className="col-lg">
             <div>
               <div className="pt-3">
                 <h1>Malia Contractor</h1>
@@ -99,6 +100,7 @@ const About_us = () => {
           </div>
         </div>
       </div>
+      <Whatsapp />
       <Footer />
     </>
   );

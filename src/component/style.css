@@ -575,8 +575,12 @@
     margin: 0 auto;
   }
 }
+.video-div {
+  width: 250px;
+  height: 300px;
+}
 @media screen and (min-width: 0px) and (max-width: 1280px) {
-  video {
+  .video-div {
     width: 400px;
     padding: 30px;
   }
