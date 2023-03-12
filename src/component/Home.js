@@ -308,11 +308,7 @@ const Home = () => {
           </div>
 
           <div className="col-md-4">
-            <img
-              src="images/IMG-20230211-WA0059.jpg"
-              className="project"
-              alt=""
-            />
+            <img src="images/8.jpg" className="project" alt="" />
           </div>
 
           <div className="col-md-4">

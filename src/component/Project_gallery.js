@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Whatsapp from "./Whatsapp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Project_gallery = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Header />

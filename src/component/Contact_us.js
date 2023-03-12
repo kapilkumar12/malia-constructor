@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+// import axios from "axios";
 import Footer from "./Footer";
 import Header from "./Header";
 import Whatsapp from "./Whatsapp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact_us = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Header />
@@ -25,7 +32,11 @@ const Contact_us = () => {
         </div>
       </div>
 
-      <div className="container contact-section bg-light p-5" id="contact">
+      <div
+        className="container contact-section bg-light p-5"
+        id="contact"
+        data-aos="zoom-in"
+      >
         <div className="row">
           <div className="col-lg">
             <div className="row justify-content-center">
@@ -69,7 +80,7 @@ const Contact_us = () => {
                       type="text"
                       className="form-control"
                       id="your-subject"
-                      name="your-subject"
+                      name="subject"
                     />
                   </div>
                   <div className=" pt-4">
@@ -110,12 +121,13 @@ const Contact_us = () => {
         </div>
       </div>
 
-      <div className="container map">
+      <div className="container map" data-aos="zoom-in">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14013.683012971273!2d77.0907995!3d28.5871518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b2ffc8073bd%3A0xba7a50742c28f30c!2sMalia%20Contactor!5e0!3m2!1sen!2sin!4v1678274856836!5m2!1sen!2sin"
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="myLocation"
         ></iframe>
       </div>
       <Whatsapp />

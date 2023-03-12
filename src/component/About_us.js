@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Whatsapp from "./Whatsapp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About_us = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Header />
@@ -21,7 +26,7 @@ const About_us = () => {
           <div className="row"></div>
         </div>
       </div>
-      <div className="container pt-5">
+      <div className="container pt-5" data-aos="zoom-in">
         <div className="row">
           <div className="col-lg">
             <div className="row about-img">
