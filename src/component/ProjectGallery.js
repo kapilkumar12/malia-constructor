@@ -5,7 +5,7 @@ import Whatsapp from "./Whatsapp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Project_gallery = () => {
+const ProjectGallery = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -37,4 +37,4 @@ const Project_gallery = () => {
   );
 };
 
-export default Project_gallery;
+export default ProjectGallery;

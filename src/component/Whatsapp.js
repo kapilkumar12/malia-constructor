@@ -4,10 +4,10 @@ const Whatsapp = () => {
   return (
     <>
       {/* <!-- whatsapp icon --> */}
-      <div class="whatsapp">
+      <div className="whatsapp">
         <a
           target="_blank"
-          without
+          without="true"
           rel="noreferrer"
           href="https://wa.me/+919811065679/?text=Hi, I would like to use your service!! Please give me more information."
           aria-label=""

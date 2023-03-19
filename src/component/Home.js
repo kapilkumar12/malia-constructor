@@ -46,7 +46,7 @@ const Home = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src="images/slider1.jpg" className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption  d-md-block">
               <h1>
                 Making your vision <br /> a reality.
               </h1>
@@ -58,7 +58,7 @@ const Home = () => {
               className="d-block w-100"
               alt="..."
             />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption  d-md-block">
               <h1>
                 Bringing your plans <br /> to life.
               </h1>
@@ -70,7 +70,7 @@ const Home = () => {
               className="d-block w-100"
               alt="..."
             />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption  d-md-block">
               <h1>
                 Making your dream <br /> home a reality.
               </h1>

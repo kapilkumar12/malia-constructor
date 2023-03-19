@@ -5,7 +5,7 @@ import Whatsapp from "./Whatsapp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const About_us = () => {
+const AboutUs = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -22,9 +22,9 @@ const About_us = () => {
             garden and parks.
           </div>
         </div>
-        <div className="container">
+        {/* <div className="container">
           <div className="row"></div>
-        </div>
+        </div> */}
       </div>
       <div className="container pt-5" data-aos="zoom-in">
         <div className="row">
@@ -32,7 +32,7 @@ const About_us = () => {
             <div className="row about-img">
               <div className="col-lg">
                 <div>
-                  <img src="images/IMG-20230211-WA0068.jpg" alt="" />
+                  <img src="images/9.jpeg" alt="" />
                 </div>
               </div>
               <div className="col-lg">
@@ -46,7 +46,7 @@ const About_us = () => {
                 <div>
                   <video controls className="video-div">
                     <source
-                      src="images/WhatsApp Video 2023-02-11 at 18.20.19.mp4"
+                      src="images/VID-20230211-WA0003.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -111,4 +111,4 @@ const About_us = () => {
   );
 };
 
-export default About_us;
+export default AboutUs;

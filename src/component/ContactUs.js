@@ -6,28 +6,67 @@ import Whatsapp from "./Whatsapp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Contact_us = () => {
+const ContactUs = () => {
   useEffect(() => {
     AOS.init();
   }, []);
 
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const handleRequest = async (e) => {
+    if (name && email && subject && message !== "") {
+      if (message !== "") {
+        e.preventDefault();
+        // setLoading(true);
+        console.log({ name, email, subject, message });
+
+        const body = {
+          name,
+          email,
+          subject,
+          message,
+        };
+
+        await fetch("http://localhost:5000/mail", body, {
+          method: "POST",
+
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((res) => {
+            alert("Email Sent Successfully");
+            // setLoading(false);
+            console.log(res);
+            window.location.reload();
+          })
+          .catch((err) => {
+            console.log(err);
+            // setLoading(false);
+          });
+      }
+    } else {
+      alert("Please fill all required filled");
+    }
+  };
   return (
     <>
       <Header />
-      <div className="container-fluid">
+
+      <div className="container-fluid ">
+        {/* <div className="contact-banner-img"></div> */}
         <div className="contact-banner">
           <div className="contact-banner-img"></div>
           <div className="contact-banner-text">
-            <p>
-              Dreams are meant to come true. <br /> We’ll make it happen for
-              you.
-              <br />
-              <div className="contact-btn">
-                <a type="button" href="#contact" className="btn btn-danger">
-                  Contact us
-                </a>
-              </div>
-            </p>
+            Dreams are meant to come true. <br /> We’ll make it happen for you.
+            <div className="contact-btn">
+              <a type="button" href="#contact" className="btn btn-danger">
+                Contact us
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -38,7 +77,7 @@ const Contact_us = () => {
         data-aos="zoom-in"
       >
         <div className="row">
-          <div className="col-lg">
+          <div className="col-lg-6">
             <div className="row justify-content-center">
               <div className="col-lg-12 pt-5">
                 <div>
@@ -46,17 +85,19 @@ const Contact_us = () => {
                   <div className="contact-red"></div>
                 </div>
 
-                <form>
+                <form onSubmit={handleRequest} method="post">
                   <div className=" pt-4">
                     <label htmlFor="your-name" className="form-label">
                       Your Name
                     </label>
                     <input
-                      type="text"
+                      id="name"
                       className="form-control"
-                      id="your-name"
-                      name="your-name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       required
+                      type="text"
+                      placeholder="Enter Your Name"
                     />
                   </div>
 
@@ -65,11 +106,13 @@ const Contact_us = () => {
                       Your Email
                     </label>
                     <input
-                      type="email"
+                      id="email"
                       className="form-control"
-                      id="your-email"
-                      name="your-email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
+                      type="text"
+                      placeholder="Enter Your valid Email"
                     />
                   </div>
                   <div className=" pt-4">
@@ -77,10 +120,13 @@ const Contact_us = () => {
                       Your Subject
                     </label>
                     <input
-                      type="text"
+                      id="subject"
                       className="form-control"
-                      id="your-subject"
-                      name="subject"
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
+                      required
+                      type="text"
+                      placeholder="Add Subject"
                     />
                   </div>
                   <div className=" pt-4">
@@ -88,18 +134,21 @@ const Contact_us = () => {
                       Your Message
                     </label>
                     <textarea
+                      id="message"
                       className="form-control"
-                      id="your-message"
-                      name="your-message"
-                      rows="5"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                       required
+                      type="text"
+                      rows="5"
+                      placeholder="Type your message.."
                     ></textarea>
                   </div>
                   <div className="col-12 pt-4">
                     <div className="row">
                       <div className="col-md-6">
                         <button
-                          data-res="<?php echo $sum; ?>"
+                          onClick={handleRequest}
                           type="submit"
                           className="btn btn-danger w-100 fw-bold"
                         >
@@ -113,7 +162,7 @@ const Contact_us = () => {
             </div>
           </div>
 
-          <div className="col-lg">
+          <div className="col-lg-6">
             <div className="contact-img">
               <img src="images/contact-vector.png" alt="" />
             </div>
@@ -136,4 +185,4 @@ const Contact_us = () => {
   );
 };
 
-export default Contact_us;
+export default ContactUs;

@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const [sticky, setSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
   return (
     <>
       <div className="container-fluid bg-dark">
@@ -30,7 +39,11 @@ const Header = () => {
       </div>
 
       {/* <!-- Navbar Start --> */}
-      <nav className="navbar navbar-expand-lg  navbar-light sticky-top py-0 pe-5">
+      <nav
+        className={`navbar navbar-expand-lg  navbar-light  py-0 pe-5 ${
+          sticky ? "sticky" : ""
+        }`}
+      >
         <a href="index.html" className="navbar-brand ps-5 me-0">
           <h1 className="text-white m-0">
             <img
@@ -50,20 +63,49 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
-            <Link to="/" className="nav-item nav-link ">
+            {/* <Link to="/" className="nav-item nav-link ">
+              Home
+            </Link> */}
+
+            <Link
+              className={`nav-item nav-link ${
+                location.pathname === "/" ? "active" : ""
+              }`}
+              to="/"
+            >
               Home
             </Link>
-            <Link to="/about_us" className="nav-item nav-link">
-              About
+
+            <Link
+              className={`nav-item nav-link ${
+                location.pathname === "/about_us" ? "active" : ""
+              }`}
+              to="/about_us"
+            >
+              About Us
             </Link>
-            <Link to="/service" className="nav-item nav-link">
+            <Link
+              className={`nav-item nav-link ${
+                location.pathname === "/service" ? "active" : ""
+              }`}
+              to="/service"
+            >
               Services
             </Link>
-
-            <Link to="/gallery" className="nav-item nav-link">
+            <Link
+              className={`nav-item nav-link ${
+                location.pathname === "/gallery" ? "active" : ""
+              }`}
+              to="/gallery"
+            >
               Our Project Gallery
             </Link>
-            <Link to="/contact" className="nav-item nav-link">
+            <Link
+              className={`nav-item nav-link ${
+                location.pathname === "/contact" ? "active" : ""
+              }`}
+              to="/contact"
+            >
               Contact Us
             </Link>
           </div>

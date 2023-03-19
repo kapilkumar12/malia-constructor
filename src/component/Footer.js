@@ -18,10 +18,10 @@ const Footer = () => {
                     <span>
                       <LocalPhoneIcon />
                     </span>
-                    <a to="tel:9811065679"> +91 9811065679</a>
+                    <Link to="tel:9811065679"> +91 9811065679</Link>
                   </li>
                   <li className="mx">
-                    <a to="tel:8076191216"> +91 8076191216</a>
+                    <Link to="tel:8076191216"> +91 8076191216</Link>
                   </li>
                   <li className="">
                     <span>
