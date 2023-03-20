@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-end">
-        Copyright © 2023 Malia Contractor All right reserved.
+        Copyright © 2023 Malia Construction All right reserved.
       </div>
     </>
   );

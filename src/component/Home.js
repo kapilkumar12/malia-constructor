@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
+    document.title = "Malia Construction -  Best Home Construction Company";
+  }, []);
+  useEffect(() => {
     AOS.init();
   }, []);
   return (
@@ -138,9 +141,9 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
               <div className="about">
-                <h3 className="text-light">Malia Contractors</h3>
+                <h3 className="text-light">Malia Constructions</h3>
                 <p className="text-light">
-                  malia contractor is a constuction company provinding <br />
+                  Malia construction is a constuction company provinding <br />
                   all kind of constuction work like structure,erecting, <br />
                   flooring and also in garden and parks. we are specialist
                   <br /> in greet wash and having ecperience over 25+ years
@@ -299,28 +302,12 @@ const Home = () => {
         </div>
 
         <div className="row ">
-          <div className="col-md-4">
+          <div className="col-md-6">
             <img
               src="images/IMG-20230211-WA0045.jpg"
               className="project"
               alt=""
             />
-          </div>
-
-          <div className="col-md-4">
-            <img src="images/8.jpg" className="project" alt="" />
-          </div>
-
-          <div className="col-md-4">
-            <img
-              src="images/IMG-20230211-WA0079.jpg"
-              className="project"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-4">
             <img
               src="images/IMG-20230211-WA0082.jpg"
               className="project"
@@ -328,26 +315,18 @@ const Home = () => {
             />
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-6">
             <img
-              src="images/IMG-20230211-WA0099.jpg"
-              className="project"
-              alt=""
-            />
-          </div>
-
-          <div className="col-md-4">
-            <img
-              src="images/IMG-20230211-WA0100.jpg"
-              className="project"
+              src="images/IMG-20230211-WA0079.jpg"
+              className="project1"
               alt=""
             />
           </div>
         </div>
         <div className="text-center pt-5">
-          <button type="button" className="btn btn-danger">
+          <Link type="button" to="/gallery" className="btn btn-danger">
             See more...
-          </button>
+          </Link>
         </div>
       </div>
       {/* project gallery section end */}

@@ -9,6 +9,10 @@ const AboutUs = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  useEffect(() => {
+    document.title = "Malia Construction - About Malia Construction";
+  }, []);
   return (
     <>
       <Header />
@@ -16,7 +20,8 @@ const AboutUs = () => {
         <div className="about-banner">
           <div className="about-banner-img"></div>
           <div className="about-banner-text">
-            malia contractor is a constuction company provinding all kind <br />
+            Malia construction is a construction company provinding all kind{" "}
+            <br />
             of constuction work like structure,erecting, flooring and also in
             <br />
             garden and parks.
@@ -69,15 +74,15 @@ const AboutUs = () => {
           <div className="col-lg">
             <div>
               <div className="pt-3">
-                <h1>Malia Contractor</h1>
+                <h1>Malia Construction</h1>
                 <div className="about-red"></div>
               </div>
 
               <div className="about-content">
                 <p className="pt-4">
-                  malia contractor is a constuction company provinding all kind
-                  of constuction work like structure,erecting, flooring and also
-                  in garden and parks.
+                  malia construction is a constuction company provinding all
+                  kind of constuction work like structure,erecting, flooring and
+                  also in garden and parks.
                 </p>
                 <p>
                   we are specialist in greet wash and having ecperience over 25+
@@ -86,10 +91,10 @@ const AboutUs = () => {
                   hyderabad. our moto is your satisfaction  and qwality
                 </p>
                 <p>
-                  Malia contractor is a construction company providing all kind
-                  of construction work like structure, erecting, flooring and
-                  also in garden and parks. we are specialist in greet wash and
-                  having experience over 25+ years in this field.
+                  Malia construction is a construction company providing all
+                  kind of construction work like structure, erecting, flooring
+                  and also in garden and parks. we are specialist in greet wash
+                  and having experience over 25+ years in this field.
                 </p>
                 <p>
                   we provide our service pan India and currently working on

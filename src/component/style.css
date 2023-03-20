@@ -1,3 +1,14 @@
+/* image animation */
+img {
+  display: block;
+  transition: transform 0.4s; /* smoother zoom */
+}
+img:hover {
+  transform: scale(1.3);
+  transform-origin: 50% 50%;
+}
+/* image animation end */
+
 /* sticky head */
 .sticky {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
@@ -35,13 +46,16 @@
 /*** Navbar ***/
 .navbar {
   margin-top: -18px;
+  background-color: #111;
 }
 
 .navbar.sticky-top {
   top: -100px;
   transition: 0.5s;
 }
-
+.navbar-toggler {
+  background: #fff;
+}
 /* .navbar .navbar-brand {
   position: relative;
   padding-right: 50px;
@@ -71,7 +85,7 @@
   font-size: 18px;
   font-weight: 500;
   outline: none;
-  color: #111;
+  color: #fff;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -402,13 +416,29 @@
 }
 
 /* project gallery section start */
+/* .gallery-red {
+  background-color: #ff0000;
+  padding: 1px;
+  width: 30%;
+  margin-left: 35%;
+} */
 .project {
   max-width: 100%;
-  width: 400px;
+  width: 700px;
   height: 300px;
   padding-top: 40px;
 }
-
+.project1 {
+  max-width: 100%;
+  padding-top: 40px;
+  max-height: 100%;
+}
+.project2 {
+  max-width: 100%;
+  padding-top: 40px;
+  max-height: 100%;
+  height: 600px;
+}
 /* whatsapp icon */
 
 .whatsapp {

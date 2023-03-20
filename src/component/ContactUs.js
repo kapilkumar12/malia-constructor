@@ -8,6 +8,9 @@ import "aos/dist/aos.css";
 
 const ContactUs = () => {
   useEffect(() => {
+    document.title = "Malia Construction - Contact us for youe query";
+  }, []);
+  useEffect(() => {
     AOS.init();
   }, []);
 
