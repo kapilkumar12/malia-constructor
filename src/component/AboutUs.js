@@ -27,21 +27,18 @@ const AboutUs = () => {
             garden and parks.
           </div>
         </div>
-        {/* <div className="container">
-          <div className="row"></div>
-        </div> */}
       </div>
       <div className="container pt-5" data-aos="zoom-in">
         <div className="row">
           <div className="col-lg">
             <div className="row about-img">
               <div className="col-lg">
-                <div>
+                <div className="imageHover">
                   <img src="images/9.jpeg" alt="" />
                 </div>
               </div>
               <div className="col-lg">
-                <div>
+                <div className="imageHover">
                   <img src="images/IMG-20230211-WA0063.jpg" alt="" />
                 </div>
               </div>

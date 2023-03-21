@@ -116,24 +116,24 @@ const Home = () => {
             <div className="col-lg-6 about-img">
               <div className="row">
                 <div className="col-md-6">
-                  <div>
+                  <div className="imageHover">
                     <img src="images/img1.jpg" alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div>
+                  <div className="imageHover">
                     <img src="images/img2.jpg" alt="" />
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-md-6">
-                  <div>
+                  <div className="imageHover">
                     <img src="images/img3.jpg" alt="" />
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div>
+                  <div className="imageHover">
                     <img src="images/img4.jpg" alt="" />
                   </div>
                 </div>
@@ -303,24 +303,30 @@ const Home = () => {
 
         <div className="row ">
           <div className="col-md-6">
-            <img
-              src="images/IMG-20230211-WA0045.jpg"
-              className="project"
-              alt=""
-            />
-            <img
-              src="images/IMG-20230211-WA0082.jpg"
-              className="project"
-              alt=""
-            />
+            <div className="imageHover">
+              <img
+                src="images/IMG-20230211-WA0045.jpg"
+                className="project"
+                alt=""
+              />
+            </div>
+            <div className="imageHover">
+              <img
+                src="images/IMG-20230211-WA0082.jpg"
+                className="project"
+                alt=""
+              />
+            </div>
           </div>
 
           <div className="col-md-6">
-            <img
-              src="images/IMG-20230211-WA0079.jpg"
-              className="project1"
-              alt=""
-            />
+            <div className="imageHover">
+              <img
+                src="images/IMG-20230211-WA0079.jpg"
+                className="project1"
+                alt=""
+              />
+            </div>
           </div>
         </div>
         <div className="text-center pt-5">

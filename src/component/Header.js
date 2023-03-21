@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -35,16 +36,28 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+          <ul className="header-first">
+            <li>
+              <span>
+                <LocationOnIcon />
+              </span>
+              Address:-
+              <Link to="https://g.co/kgs/NQggwA">
+                235, Street Number 6, Palam Colony, Sadh Nagar, Palam, New
+                Delhi, Delhi 110045
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
 
       {/* <!-- Navbar Start --> */}
       <nav
-        className={`navbar navbar-expand-lg  navbar-light  py-0 pe-5 ${
+        className={`navbar navbar-expand-lg  navbar-light  py-0 ${
           sticky ? "sticky" : ""
         }`}
       >
-        <a href="index.html" className="navbar-brand ps-5 me-0">
+        <a href="index.html" className="navbar-brand  me-0">
           <h1 className="text-white m-0">
             <img
               src="images/logo.png"
@@ -86,9 +99,9 @@ const Header = () => {
             </Link>
             <Link
               className={`nav-item nav-link ${
-                location.pathname === "/service" ? "active" : ""
+                location.pathname === "/services" ? "active" : ""
               }`}
-              to="/service"
+              to="/services"
             >
               Services
             </Link>

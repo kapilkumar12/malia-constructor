@@ -33,7 +33,7 @@ const ContactUs = () => {
           message,
         };
 
-        await fetch("http://localhost:5000/mail", body, {
+        await fetch("http://localhost:8006/register", body, {
           method: "POST",
 
           headers: {

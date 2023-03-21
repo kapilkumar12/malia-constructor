@@ -1,11 +1,13 @@
 /* image animation */
-img {
-  display: block;
-  transition: transform 0.4s; /* smoother zoom */
+.imageHover {
+  width: 100%;
+  overflow: hidden;
 }
-img:hover {
-  transform: scale(1.3);
-  transform-origin: 50% 50%;
+.imageHover img {
+  transition: all 0.3s ease-in-out;
+}
+.imageHover:hover img {
+  transform: scale(1.1);
 }
 /* image animation end */
 
@@ -19,6 +21,11 @@ img:hover {
   padding-bottom: 10px;
 }
 /* /sticky head end */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-first {
   display: flex;
   list-style: none;
@@ -36,6 +43,7 @@ img:hover {
 .header-first li a {
   text-decoration: none;
   color: rgb(187, 86, 86);
+  padding-left: 10px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 1280px) {
@@ -46,7 +54,7 @@ img:hover {
 /*** Navbar ***/
 .navbar {
   margin-top: -18px;
-  background-color: #111;
+  background-color: #fff;
 }
 
 .navbar.sticky-top {
@@ -56,27 +64,6 @@ img:hover {
 .navbar-toggler {
   background: #fff;
 }
-/* .navbar .navbar-brand {
-  position: relative;
-  padding-right: 50px;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  background: var(--primary);
-  background-color: blue;
-} */
-
-/* .navbar .navbar-brand::after {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 100%;
-  top: 0;
-  right: -25px;
-  transform: skewX(-30deg);
-  background-color: blue;
-  
-} */
 
 .navbar .navbar-nav .nav-link {
   margin-right: 35px;
@@ -85,17 +72,13 @@ img:hover {
   font-size: 18px;
   font-weight: 500;
   outline: none;
-  color: #fff;
+  color: #111;
 }
 
 .navbar .navbar-nav .nav-link:hover {
   color: var(--primary);
   color: rgb(167, 18, 18);
 }
-
-/* a {
-  color: #eeeeee;
-} */
 
 .navbar .navbar-nav .nav-link.active {
   color: var(--primary);
@@ -416,12 +399,7 @@ img:hover {
 }
 
 /* project gallery section start */
-/* .gallery-red {
-  background-color: #ff0000;
-  padding: 1px;
-  width: 30%;
-  margin-left: 35%;
-} */
+
 .project {
   max-width: 100%;
   width: 700px;
@@ -439,6 +417,23 @@ img:hover {
   max-height: 100%;
   height: 600px;
 }
+@media screen and (min-width: 0px) and (max-width: 620px) {
+  .project2 {
+    height: 300px;
+  }
+}
+.redproject-line {
+  background-color: #ff0000;
+  padding: 1px;
+  width: 20%;
+  margin-left: 40%;
+}
+@media screen and (min-width: 0px) and (max-width: 1280px) {
+  .redproject-line {
+    margin: auto;
+  }
+}
+/* project section end */
 /* whatsapp icon */
 
 .whatsapp {
@@ -448,9 +443,6 @@ img:hover {
   z-index: 99;
   cursor: pointer;
   display: block;
-
-  /* background-color: #f7481c; */
-  /* border-radius: 50%; */
   width: 70px;
   height: 70px;
 }
@@ -461,10 +453,11 @@ img:hover {
   margin-top: 10px;
   transition: transform 0.7s;
 }
-
 .whatsapp img:hover {
   transform: rotate(360deg);
 }
+
+/* whatsapp icon end */
 /* footer css */
 .footer {
   background-color: black;
@@ -639,7 +632,7 @@ img:hover {
 }
 @media screen and (min-width: 0px) and (max-width: 1280px) {
   .video-div {
-    width: 400px;
+    width: 100%;
     padding: 30px;
   }
 }
