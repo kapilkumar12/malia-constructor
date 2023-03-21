@@ -77,15 +77,16 @@ const AboutUs = () => {
 
               <div className="about-content">
                 <p className="pt-4">
-                  malia construction is a constuction company provinding all
+                  Malia construction is a constuction company provinding all
                   kind of constuction work like structure,erecting, flooring and
                   also in garden and parks.
                 </p>
                 <p>
-                  we are specialist in greet wash and having ecperience over 25+
+                  We are specialist in greet wash and having ecperience over 25+
                   years in this feild. we provide our service pan india and
-                  currently working on multiple projects in jaipur indore and
-                  hyderabad. our moto is your satisfaction  and qwality
+                  currently working on multiple projects in jaipur indore
+                  hyderabad and pan india. our moto is your satisfaction 
+                  and qwality
                 </p>
                 <p>
                   Malia construction is a construction company providing all

@@ -33,12 +33,15 @@ const ContactUs = () => {
           message,
         };
 
-        await fetch("http://localhost:8006/register", body, {
-          method: "POST",
+        const url = "http://localhost:8006/register";
 
+        //  post email
+        fetch(url, {
+          method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
+          body: JSON.stringify(body),
         })
           .then((res) => {
             alert("Email Sent Successfully");
