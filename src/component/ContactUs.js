@@ -33,7 +33,7 @@ const ContactUs = () => {
           message,
         };
 
-        const url = "http://localhost:8006/register";
+        const url = "/register";
 
         //  post email
         fetch(url, {

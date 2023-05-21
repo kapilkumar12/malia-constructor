@@ -48,7 +48,7 @@ const AboutUs = () => {
                 <div>
                   <video controls className="video-div">
                     <source
-                      src="images/VID-20230211-WA0003.mp4"
+                      src="videos/VID-20230211-WA0003.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -59,7 +59,7 @@ const AboutUs = () => {
                 <div>
                   <video className="video-div" controls>
                     <source
-                      src="images/VID-20230211-WA0004.mp4"
+                      src="videos/VID-20230211-WA0004.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -82,10 +82,8 @@ const AboutUs = () => {
                   also in garden and parks.
                 </p>
                 <p>
-                  We are specialist in greet wash and having ecperience over 25+
-                  years in this feild. we provide our service pan india and
-                  currently working on multiple projects in jaipur indore
-                  hyderabad and pan india. our moto is your satisfaction 
+                  We are specialist in greet wash and having experience over 25+
+                  years in this feild. Our moto is your satisfaction 
                   and qwality
                 </p>
                 <p>
@@ -95,13 +93,37 @@ const AboutUs = () => {
                   and having experience over 25+ years in this field.
                 </p>
                 <p>
-                  we provide our service pan India and currently working on
+                  We provide our service pan India and currently working on
                   multiple projects in Jaipur Indore and Hyderabad.
                 </p>
                 <p>
-                  Our moto is your satisfaction and quality. We have strict
-                  check on quality and have team of different team of specialist
-                  for different work
+                  At Malia construction, safety is our top priority. We follow
+                  strict safety protocols and regulations to ensure a safe
+                  working environment for our workers and clients.
+                </p>
+                <p>
+                  Our clients trust us to deliver projects that meet their
+                  unique needs and exceed their expectations.
+                </p>
+                We have completed numerous projects, both big and small, for
+                residential and commercial clients. <br />
+                <strong>Our portfolio includes:</strong>
+                <div className="pb-3">
+                  <li>Residential homes</li>
+                  <li>Retail stores</li>
+                  <li>Office buildings</li>
+                  <li>Restaurants</li>
+                  <li>Schools</li>
+                  <li>Hospitals</li>
+                </div>
+                <p>
+                  Ready to start your construction project? Contact us today to
+                  schedule a consultation. Our team will work with you to
+                  provide a detailed project plan and a competitive quote.
+                </p>
+                <p>
+                  Thank you for considering Malia construction for your
+                  construction needs. We look forward to working with you.
                 </p>
               </div>
             </div>

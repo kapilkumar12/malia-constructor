@@ -7,6 +7,7 @@ import ProjectGallery from "./component/ProjectGallery";
 import { ThemeProvider } from "styled-components";
 import GoToTop from "./component/GoToTop";
 import Services from "./component/Services";
+import ProjectVideos from "./component/ProjectVideos";
 
 function App() {
   const theme = {
@@ -39,6 +40,7 @@ function App() {
             <Route path="/about_us" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/gallery" element={<ProjectGallery />} />
+            <Route path="/videos" element={<ProjectVideos />} />
             <Route path="/services" element={<Services />} />
           </Routes>
         </Router>

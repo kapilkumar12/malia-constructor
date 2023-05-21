@@ -105,14 +105,28 @@ const Header = () => {
             >
               Services
             </Link>
-            <Link
-              className={`nav-item nav-link ${
-                location.pathname === "/gallery" ? "active" : ""
-              }`}
-              to="/gallery"
-            >
-              Our Project Gallery
-            </Link>
+            <li className="dropdown">
+              <Link
+                className={`nav-item nav-link ${
+                  location.pathname === "/gallery" ? "active" : ""
+                }`}
+                to=" "
+              >
+                Our Project Gallery
+              </Link>
+              <div className="dropdown-content">
+                <Link to="/gallery">Project Images</Link>
+
+                <Link to="/videos">Project Videos</Link>
+
+                {/* <Link to="/office-relocation">Office Relocation</Link>
+
+                <Link to="/rental-assistance">Rental Assistance</Link>
+
+                <Link to="/service-apartments">Service Apartments</Link> */}
+              </div>
+            </li>
+
             <Link
               className={`nav-item nav-link ${
                 location.pathname === "/contact" ? "active" : ""
