@@ -7,7 +7,7 @@ import ProjectGallery from "./component/ProjectGallery";
 import { ThemeProvider } from "styled-components";
 import GoToTop from "./component/GoToTop";
 import Services from "./component/Services";
-import ProjectVideos from "./component/ProjectVideos";
+import Error from "./component/Error";
 
 function App() {
   const theme = {
@@ -37,11 +37,11 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about_us" element={<AboutUs />} />
-            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/gallery" element={<ProjectGallery />} />
-            <Route path="/videos" element={<ProjectVideos />} />
             <Route path="/services" element={<Services />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </Router>
       </ThemeProvider>

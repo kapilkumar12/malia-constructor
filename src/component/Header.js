@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -17,7 +16,7 @@ const Header = () => {
   });
   return (
     <>
-      <div className="container-fluid bg-dark">
+      <div className="container-fluid main_header">
         <div className="header">
           <ul className="header-first">
             <li>
@@ -31,20 +30,8 @@ const Header = () => {
                 <EmailIcon />
               </span>
               Email:-
-              <Link to="mailto:maliacontractorcivil@gmail.com">
-                maliacontractorcivil@gmail.com
-              </Link>
-            </li>
-          </ul>
-          <ul className="header-first">
-            <li>
-              <span>
-                <LocationOnIcon />
-              </span>
-              Address:-
-              <Link to="https://g.co/kgs/NQggwA">
-                235, Street Number 6, Palam Colony, Sadh Nagar, Palam, New
-                Delhi, Delhi 110045
+              <Link to="mailto:maliaconstructioninfo@gmail.com">
+                maliaconstructioninfo@gmail.com
               </Link>
             </li>
           </ul>
@@ -76,10 +63,6 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
-            {/* <Link to="/" className="nav-item nav-link ">
-              Home
-            </Link> */}
-
             <Link
               className={`nav-item nav-link ${
                 location.pathname === "/" ? "active" : ""
@@ -91,9 +74,9 @@ const Header = () => {
 
             <Link
               className={`nav-item nav-link ${
-                location.pathname === "/about_us" ? "active" : ""
+                location.pathname === "/about-us" ? "active" : ""
               }`}
-              to="/about_us"
+              to="/about-us"
             >
               About Us
             </Link>
@@ -110,28 +93,17 @@ const Header = () => {
                 className={`nav-item nav-link ${
                   location.pathname === "/gallery" ? "active" : ""
                 }`}
-                to=" "
+                to="/gallery"
               >
                 Our Project Gallery
               </Link>
-              <div className="dropdown-content">
-                <Link to="/gallery">Project Images</Link>
-
-                <Link to="/videos">Project Videos</Link>
-
-                {/* <Link to="/office-relocation">Office Relocation</Link>
-
-                <Link to="/rental-assistance">Rental Assistance</Link>
-
-                <Link to="/service-apartments">Service Apartments</Link> */}
-              </div>
             </li>
 
             <Link
               className={`nav-item nav-link ${
-                location.pathname === "/contact" ? "active" : ""
+                location.pathname === "/contact-us" ? "active" : ""
               }`}
-              to="/contact"
+              to="/contact-us"
             >
               Contact Us
             </Link>

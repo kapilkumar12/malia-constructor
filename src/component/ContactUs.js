@@ -18,51 +18,13 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
+  const [number, setNumber] = useState("");
 
-  const handleRequest = async (e) => {
-    if (name && email && subject && message !== "") {
-      if (message !== "") {
-        e.preventDefault();
-        // setLoading(true);
-        console.log({ name, email, subject, message });
-
-        const body = {
-          name,
-          email,
-          subject,
-          message,
-        };
-
-        const url = "/register";
-
-        //  post email
-        fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(body),
-        })
-          .then((res) => {
-            alert("Email Sent Successfully");
-            // setLoading(false);
-            console.log(res);
-            window.location.reload();
-          })
-          .catch((err) => {
-            console.log(err);
-            // setLoading(false);
-          });
-      }
-    } else {
-      alert("Please fill all required filled");
-    }
-  };
   return (
     <>
       <Header />
 
-      <div className="container-fluid ">
+      <div className="container-fluid pl-0 pr-0">
         {/* <div className="contact-banner-img"></div> */}
         <div className="contact-banner">
           <div className="contact-banner-img"></div>
@@ -74,6 +36,28 @@ const ContactUs = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row py-3">
+          <h1 className="theme-color">
+            Contact Malia Construction: Building Your Vision with 25 Years of
+            Expertise
+          </h1>
+          <p>
+            Ready to embark on your construction journey? Contact Malia
+            Construction, a premier civil services company with an extensive
+            25-year legacy. Whether it's crafting dream homes, innovative retail
+            spaces, efficient office buildings, inviting restaurants, inspiring
+            schools, or state-of-the-art hospitals, our experienced team is
+            dedicated to turning your vision into reality. Reach out to us for a
+            consultation and discover how our expertise and commitment to
+            excellence can elevate your construction project. Your dreams
+            deserve the precision and innovation that Malia Construction brings
+            to every endeavor. Contact us today, and let's build something
+            extraordinary together.
+          </p>
         </div>
       </div>
 
@@ -91,7 +75,7 @@ const ContactUs = () => {
                   <div className="contact-red"></div>
                 </div>
 
-                <form onSubmit={handleRequest} method="post">
+                <form action="https://formspree.io/f/maygrydn" method="POST">
                   <div className=" pt-4">
                     <label htmlFor="your-name" className="form-label">
                       Your Name
@@ -104,6 +88,7 @@ const ContactUs = () => {
                       required
                       type="text"
                       placeholder="Enter Your Name"
+                      name="name"
                     />
                   </div>
 
@@ -119,6 +104,22 @@ const ContactUs = () => {
                       required
                       type="text"
                       placeholder="Enter Your valid Email"
+                      name="email"
+                    />
+                  </div>
+                  <div className=" pt-4">
+                    <label htmlFor="your-number" className="form-label">
+                      Mobile No.
+                    </label>
+                    <input
+                      id="email"
+                      className="form-control"
+                      value={number}
+                      onChange={(e) => setNumber(e.target.value)}
+                      required
+                      type="number"
+                      placeholder="Enter Your valid Email"
+                      name="number"
                     />
                   </div>
                   <div className=" pt-4">
@@ -133,6 +134,7 @@ const ContactUs = () => {
                       required
                       type="text"
                       placeholder="Add Subject"
+                      name="subject"
                     />
                   </div>
                   <div className=" pt-4">
@@ -148,13 +150,13 @@ const ContactUs = () => {
                       type="text"
                       rows="5"
                       placeholder="Type your message.."
+                      name="message"
                     ></textarea>
                   </div>
                   <div className="col-12 pt-4">
                     <div className="row">
                       <div className="col-md-6">
                         <button
-                          onClick={handleRequest}
                           type="submit"
                           className="btn btn-danger w-100 fw-bold"
                         >

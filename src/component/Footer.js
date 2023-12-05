@@ -10,6 +10,20 @@ const Footer = () => {
       <div className="container-fluid footer">
         <div className="container">
           <div className="row row-cols-3 office  ">
+            <div className="col work-hours">
+              <h3>Informations</h3>
+              <div>
+                <p>
+                  Malia Construction is a distinguished civil services company
+                  with 25 years of experience in residential homes, retail
+                  stores, office buildings, restaurants, schools, and hospitals.
+                  While every effort is made to ensure accuracy, project details
+                  may be subject to change. Consult directly for the most
+                  current and precise information.
+                </p>
+              </div>
+            </div>
+
             <div className="col office1 ">
               <h3>Our Office</h3>
               <div className="">
@@ -27,8 +41,8 @@ const Footer = () => {
                     <span>
                       <EmailIcon />
                     </span>
-                    <Link to="mailto:maliacontractorcivil@gmail.com">
-                      maliacontractorcivil@gmail.com
+                    <Link to="mailto:maliaconstructioninfo@gmail.com">
+                      maliaconstructioninfo@gmail.com
                     </Link>
                   </li>
                   <li className="d-flex">
@@ -56,7 +70,7 @@ const Footer = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about_us">About</Link>
+                    <Link to="/about-us">About</Link>
                   </li>
                   <li>
                     <Link to="/services">Services</Link>
@@ -65,19 +79,7 @@ const Footer = () => {
                     <Link to="/gallery">Our Project Gallery</Link>
                   </li>
                   <li>
-                    <Link to="/contact">Contact Us</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col work-hours">
-              <h3>Our Work Hours</h3>
-              <div>
-                <ul>
-                  <li>Monday - Sunday</li>
-                  <li>
-                    <b>10Am - 06Pm</b>
+                    <Link to="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>

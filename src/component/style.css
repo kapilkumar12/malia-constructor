@@ -1,15 +1,41 @@
-/* image animation */
-.imageHover {
-  width: 100%;
-  overflow: hidden;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.imageHover img {
-  transition: all 0.3s ease-in-out;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  line-height: 1.42857143;
 }
-.imageHover:hover img {
-  transform: scale(1.1);
+
+h1 {
+  font-size: 30px;
+  color: #0c595c;
 }
-/* image animation end */
+
+h2 {
+  font-size: 24px;
+  color: red;
+}
+
+p {
+  font-size: 16px !important;
+}
+
+.bg-light {
+  background-color: #efefef !important;
+}
+
+.common-shadow {
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+.theme-color {
+  color: #0c595c;
+}
 
 /* sticky head */
 .sticky {
@@ -23,6 +49,10 @@
 /* /sticky head end */
 
 /* header start */
+.main_header {
+  background-color: #0c595c !important;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -44,11 +74,12 @@
 }
 .header-first li a {
   text-decoration: none;
-  color: rgb(187, 86, 86);
+  color: rgb(53 214 255);
   padding-left: 10px;
+  font-size: 15px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 1280px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .header-first {
     display: none;
   }
@@ -56,6 +87,7 @@
 /*** Navbar ***/
 .navbar {
   transition: 0.3s;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .sticky {
@@ -82,12 +114,12 @@
 
 .navbar .navbar-nav .nav-link:hover {
   color: var(--primary);
-  color: rgb(167, 18, 18);
+  color: rgb(20 158 121);
 }
 
 .navbar .navbar-nav .nav-link.active {
   color: var(--primary);
-  color: rgb(167, 18, 18);
+  color: rgb(20 158 121);
 }
 
 .navbar .dropdown-toggle::after {
@@ -113,6 +145,7 @@
 .logo {
   max-width: 100%;
   width: 100px;
+  height: 80px;
 }
 .dropdown {
   position: relative;
@@ -161,7 +194,7 @@
   display: block;
 }
 .dropdown-content.dropdown-content a:hover {
-  color: #e32222;
+  color: rgb(20 158 121);
 }
 /* header end */
 /* home css start*/
@@ -181,6 +214,7 @@
   text-align: center;
   text-shadow: 2px 2px #c42525;
   color: #111;
+  font-size: 40px;
 }
 .carousel-item img {
   height: 600px;
@@ -195,15 +229,17 @@
   }
 }
 
+.counter-box {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fcd7ff;
+}
+
 /* about section */
 .about-hea {
-  color: #fff;
   text-align: center;
-  font-family: "Audiowide", sans-serif;
-  font-family: "Sofia", sans-serif;
-  font-family: "Trirong", serif;
-  padding: 15px;
   text-transform: uppercase;
+  color: #0c595c;
 }
 .about-img img {
   max-width: 100%;
@@ -221,9 +257,7 @@
     margin: auto;
   }
 }
-.about h3 {
-  margin-top: 15%;
-}
+
 .about p {
   margin-top: 4%;
   font-size: 20px;
@@ -238,16 +272,18 @@
   padding-top: 15px;
   text-transform: uppercase;
 }
-@media screen and (min-width: 0px) and (max-width: 1280px) {
-  .procedure h1 {
-    font-size: 1em;
-  }
+
+.procedure_heading {
+  font-size: 30px;
+  color: #0c595c;
+  text-align: center;
 }
+
 .procedure-line {
   background-color: #ff0000;
   padding: 1px;
-  width: 40%;
-  margin-left: 30%;
+  width: 30%;
+  margin-left: 35%;
 }
 @media screen and (min-width: 0px) and (max-width: 1280px) {
   .procedure-line {
@@ -256,12 +292,12 @@
 }
 /* procedure section css */
 .box1 {
-  color: #eeeeee;
   padding: 10px;
-  border: 1px solid #eeeeee;
-  height: 210px;
-  border-radius: 10px;
-  overflow: hidden;
+  height: 220px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 20px;
 }
 .box1 img {
   max-width: 100%;
@@ -269,187 +305,24 @@
   overflow: hidden;
 }
 .box1 h3 {
-  font-weight: 400;
-  font-size: 1em;
-  color: rgb(187, 86, 86);
-  margin-top: 13px;
-  overflow: hidden;
-}
-.box1 p {
-  font-weight: 300;
-  font-size: 0.8em;
-  overflow: hidden;
-}
-.box2 {
-  color: #eeeeee;
-  padding: 10px;
-  border: 1px solid #eeeeee;
-  height: 210px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.box2 img {
-  max-width: 100%;
-  margin-top: 60px;
-  overflow: hidden;
-}
-.box2 h3 {
-  font-weight: 400;
-  font-size: 1em;
-  color: rgb(187, 86, 86);
-  margin-top: 13px;
-  overflow: hidden;
-}
-.box2 p {
-  font-weight: 300;
-  font-size: 0.8em;
-  overflow: hidden;
-}
-.box3 {
-  color: #eeeeee;
-  padding: 10px;
-  border: 1px solid #eeeeee;
-  height: 210px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.box3 img {
-  max-width: 100%;
-  margin-top: 80px;
-  overflow: hidden;
-}
-.box3 h3 {
-  font-weight: 400;
-  font-size: 1em;
-  color: rgb(187, 86, 86);
-  margin-top: 13px;
-  margin-top: 40px;
-  overflow: hidden;
-}
-.box3 p {
-  font-weight: 300;
-  font-size: 0.8em;
-  overflow: hidden;
-}
-.box4 {
-  color: #eeeeee;
-  padding: 10px;
-  border: 1px solid #eeeeee;
-  height: 210px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.box4 img {
-  max-width: 100%;
-  margin-top: 60px;
-  overflow: hidden;
-}
-.box4 h3 {
-  font-weight: 400;
-  font-size: 1em;
-  color: rgb(187, 86, 86);
-  margin-top: 13px;
-  overflow: hidden;
-}
-.box4 p {
-  font-weight: 300;
-  font-size: 0.8em;
-  overflow: hidden;
-}
-.box5 {
-  color: #eeeeee;
-  padding: 10px;
-  border: 1px solid #eeeeee;
-  height: 210px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.box5 img {
-  max-width: 100%;
-  margin-top: 20px;
-  overflow: hidden;
-}
-.box5 h3 {
-  font-weight: 400;
-  font-size: 1em;
-  color: rgb(187, 86, 86);
-  margin-top: 30px;
-  overflow: hidden;
-}
-.box5 p {
-  font-weight: 300;
-  font-size: 0.8em;
-  overflow: hidden;
-}
-.box6 {
-  color: #eeeeee;
-  padding: 10px;
-  border: 1px solid #eeeeee;
-  height: 210px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.box6 img {
-  max-width: 100%;
-  margin-top: 60px;
-  overflow: hidden;
-}
-.box6 h3 {
-  font-weight: 400;
-  font-size: 1em;
-  color: rgb(187, 86, 86);
-  margin-top: 50px;
-  overflow: hidden;
-}
-.box6 p {
-  font-weight: 300;
-  font-size: 0.8em;
-  overflow: hidden;
-}
-.box7 {
-  color: #eeeeee;
-  padding: 10px;
-  border: 1px solid #eeeeee;
-  height: 210px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.box7 img {
-  max-width: 100%;
-  margin-top: 50px;
-  overflow: hidden;
-}
-.box7 h3 {
-  font-weight: 400;
-  font-size: 1em;
-  color: rgb(187, 86, 86);
-  margin-top: 13px;
-  margin-top: 20px;
-  overflow: hidden;
-}
-.box7 p {
-  font-weight: 300;
-  font-size: 0.8em;
-  overflow: hidden;
+  color: #0c595c;
 }
 
-@media screen and (min-width: 0px) and (max-width: 1280px) {
-  .procedure-box-section1 .col:nth-of-type(1),
-  .procedure-box-section1 .col:nth-of-type(2),
-  .procedure-box-section1 .col:nth-of-type(3),
-  .procedure-box-section1 .col:nth-of-type(4) {
-    width: 100%;
-    padding: 10px;
-    overflow: hidden;
+@media (max-width: 1400px) {
+  .box1 {
+    height: 250px;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 1280px) {
-  .procedure-box-section2 .col:nth-of-type(1),
-  .procedure-box-section2 .col:nth-of-type(2),
-  .procedure-box-section2 .col:nth-of-type(3) {
-    width: 100%;
-    padding: 10px;
-    overflow: hidden;
+
+@media (max-width: 1200px) {
+  .box1 {
+    height: 325px;
+  }
+}
+
+@media (max-width: 991px) {
+  .box1 {
+    height: 100%;
   }
 }
 
@@ -606,17 +479,26 @@
     padding-left: 0px;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .footer .col:nth-of-type(1) {
     width: 100%;
-    /* margin-left: 0px; */
-    /* padding: 10px; */
   }
   .footer .col:nth-of-type(2),
   .footer .col:nth-of-type(3) {
     width: 50%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer .col:nth-of-type(1) {
+    width: 100%;
+  }
+  .footer .col:nth-of-type(2),
+  .footer .col:nth-of-type(3) {
+    width: 100%;
+  }
+}
+
 .footer-end {
   background: #696969;
   text-align: center;
@@ -670,9 +552,8 @@
   text-shadow: 2px 2px #545454;
 }
 .about-img img {
-  max-width: 100%;
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 350px;
 }
 .about-red {
   background-color: #ff0000;
@@ -694,19 +575,19 @@
   }
 }
 .video-div {
-  width: 250px;
-  height: 300px;
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
 }
-@media screen and (min-width: 0px) and (max-width: 1280px) {
+@media (max-width: 768px) {
   .video-div {
     width: 100%;
-    padding: 30px;
+    height: 100%;
   }
 }
 /* about page section end */
 .contact-banner {
   max-width: 100%;
-  /* width: 600px; */
   height: 90vh;
   position: relative;
 }
@@ -772,3 +653,134 @@
   padding-top: 10px;
 }
 /* contact page section end */
+.image-card {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 3px solid #7b6464;
+}
+
+#lightbox-img {
+  height: 75%;
+  max-width: 75%;
+  object-fit: cover;
+}
+
+#lightbox {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0a0a0acf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .image-card {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.projectbtan {
+  border: 1px solid #7e7e7e !important;
+  border-radius: 8px !important;
+  padding: 5px 15px !important;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: #495057 !important;
+  font-weight: bold;
+}
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.nav-tabs .projectbtan.active {
+  color: #0c595c !important;
+  background-color: #fff !important;
+  border-color: #0c595c !important;
+}
+
+.projectbtan:hover {
+  color: #0c595c !important;
+  background-color: #fff !important;
+  border-color: #0c595c !important;
+}
+
+/*Completely optional styling that has nothing to do with the lightbox*/
+
+/* error page css */
+
+.error-page {
+  display: flex;
+  background: #0c595c;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  position: relative;
+}
+
+.error-content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error-content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #8338ec;
+}
+
+.error-content h2:nth-child(2) {
+  color: #c19bf5;
+  animation: animate 4s ease-in-out infinite;
+}
+
+.error-page p {
+  color: #fff;
+  font-size: 40px !important;
+  text-align: center;
+  margin-top: 70px;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
